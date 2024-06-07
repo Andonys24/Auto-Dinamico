@@ -4,8 +4,8 @@
 /* Variables */
 :root {
 	/* Colores */
-	--rojo: #D90429;
-	--rojoSecundario: #DD1F3F;
+	--rojo: #d90429;
+	--rojoSecundario: #dd1f3f;
 	--negro: #020102;
 	--blanco: #fff;
 	/* Fuentes */
@@ -22,7 +22,7 @@
 	text-decoration: none;
 	box-sizing: border-box;
 }
-section{
+section {
 	padding: 4rem 0 2rem;
 }
 img {
@@ -37,13 +37,13 @@ body {
 	margin-right: auto;
 }
 /* Estilos botones */
-.btn{
+.btn {
 	padding: 10px 22px;
 	background: var(--rojo);
 	color: var(--blanco);
 	font-weight: 400;
 }
-.btn:hover{
+.btn:hover {
 	background: var(--rojoSecundario);
 }
 /* Estilos Header */
@@ -95,58 +95,112 @@ header {
 }
 
 /* Icono de Busqueda */
-#search-icon{
-    font-size: 24px;
-    cursor: pointer;
+#search-icon {
+	font-size: 24px;
+	cursor: pointer;
 	color: var(--blanco);
 }
 /* Caja de Busqueda */
-.search-box{
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
-    background: var(--blanco);
-    box-shadow: 4px 4px 20px rgb(15 54 55 / 10%);
-    border: 1px solid var(--rojo);
-    border-radius: 0.5rem;
+.search-box {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	left: 0;
+	background: var(--blanco);
+	box-shadow: 4px 4px 20px rgb(15 54 55 / 10%);
+	border: 1px solid var(--rojo);
+	border-radius: 0.5rem;
 	clip-path: circle(0% at 100% 0%);
 	transition: 0.4s;
 }
-.search-box.active{
+.search-box.active {
 	clip-path: circle(144% at 100% 0%);
 	transition: 0.4s;
 }
-.search-box input{
-    width: 100%;
-    padding: 20px;
-    border: none;
-    outline: none;
-    background: transparent;
-    font-size: 1rem;
+.search-box input {
+	width: 100%;
+	padding: 20px;
+	border: none;
+	outline: none;
+	background: transparent;
+	font-size: 1rem;
 }
 
 /* Seccion de INICIO */
-.home{
+.home {
 	max-width: 1300px;
 	margin: auto;
 	width: 100%;
 	min-height: 640px;
 	display: flex;
 	align-items: center;
-	background-image: url('../img/Background-home.png');
+	background-image: url("../img/Background-home.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center left;
 }
-.home-text{
+.home-text {
 	padding-left: 130px;
 }
-.home-text span{
+.home-text span {
 	color: var(--rojo);
 }
-.home-text p{
+.home-text p {
 	font-size: 0.938rem;
 	font-weight: 300;
 	margin: 0.5rem 0 1.2rem;
+}
+/* Seccion de autos */
+.heading {
+	text-align: center;
+}
+.heading span {
+	font-weight: 500;
+	color: var(--rojo);
+}
+.heading p {
+	font-size: 0.938rem;
+	font-weight: 300;
+}
+/* Contendor Autos */
+.cars-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	margin-top: 2rem;
+}
+.cars-container .box {
+	flex: 1 1 17rem;
+	position: relative;
+	height: 200px;
+	border-radius: 0.5rem;
+	overflow: hidden;
+}
+.cars-container .box img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	overflow: hidden;
+	transition: 0.5s;
+}
+/* Transision al poner el cursor encima de la imagen */
+.cars-container .box img:hover {
+	transform: scale(1.1);
+	transition: 0.5s;
+}
+.cars-container .box h2 {
+	position: absolute;
+	bottom: 1rem;
+	left: 1rem;
+	font-weight: 400;
+	font-size: 1rem;
+	background: var(--blanco);
+	padding: 8px;
+	border-radius: 0.5rem;
+	transition: 0.5s;
+}
+.cars-container .box:hover h2 {
+	background: var(--rojo);
+	color: var(--blanco);
+	transition: 0.5s;
 }
