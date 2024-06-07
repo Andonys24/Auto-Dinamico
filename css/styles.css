@@ -8,6 +8,7 @@
 	--rojoSecundario: #dd1f3f;
 	--negro: #020102;
 	--blanco: #fff;
+	--blancoSecundario: #b0b0b0;
 	/* Fuentes */
 	--fuentePrincipal: "Poppins", sans-serif;
 }
@@ -206,26 +207,78 @@ header {
 }
 
 /* Seccion Acerca de */
-.about{
+.about {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	gap: 1.5rem;
 }
-.about-img{
+.about-img {
 	flex: 1 1 21rem;
 }
-.about-text{
+.about-text {
 	flex: 1 1 21rem;
 }
-.about-text span{
+.about-text span {
 	font-weight: 500;
 	color: var(--rojo);
 }
-.about-text h2{
+.about-text h2 {
 	font-size: 1.7rem;
 }
-.about-text p{
+.about-text p {
 	font-size: 0.938rem;
 	margin: 0.5rem 0 1.4rem;
+}
+/* Partes de Auto */
+.parts-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	margin-top: 2rem;
+}
+.parts-container .box {
+	flex: 1 1 17rem;
+	position: relative;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	background: var(--blancoSecundario);
+	border-radius: 0.5rem;
+}
+.parts-container .box img {
+	width: 100%;
+	height: 150px;
+	object-fit: contain;
+	object-position: center;
+	margin-bottom: 1rem;
+}
+.parts-container .box h3,
+.parts-container .box span {
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+.parts-container .box span {
+	color: var(--rojo);
+}
+.parts-container .box .bx{
+	color: var(--rojo);
+	margin: 0.8rem 0;
+}
+.parts-container .box .btn{
+	max-width: 170px;
+
+}
+.parts-container .box .details{
+	display: flex;
+	align-items: center;
+	position: absolute;
+	bottom: 1.8rem;
+	right: 1rem;
+	font-size: 1rem;
+	color: var(--negro);
+}
+.parts-container .box .details:hover{
+	color: var(--rojo);
+	text-decoration: underline;
 }
