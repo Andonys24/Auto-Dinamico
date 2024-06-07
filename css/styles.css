@@ -4,9 +4,10 @@
 /* Variables */
 :root {
 	/* Colores */
-	--color-principal: #d90429;
-	--color-texto: #020102;
-	--color-bg: #fff;
+	--rojo: #D90429;
+	--rojoSecundario: #DD1F3F;
+	--negro: #020102;
+	--blanco: #fff;
 	/* Fuentes */
 	--fuentePrincipal: "Poppins", sans-serif;
 }
@@ -21,18 +22,30 @@
 	text-decoration: none;
 	box-sizing: border-box;
 }
+section{
+	padding: 4rem 0 2rem;
+}
 img {
 	width: 100%;
 }
 body {
-	color: var(--color-texto);
+	color: var(--negro);
 }
 .container {
 	max-width: 1068px;
 	margin-left: auto;
 	margin-right: auto;
 }
-
+/* Estilos botones */
+.btn{
+	padding: 10px 22px;
+	background: var(--rojo);
+	color: var(--blanco);
+	font-weight: 400;
+}
+.btn:hover{
+	background: var(--rojoSecundario);
+}
 /* Estilos Header */
 header {
 	display: block;
@@ -54,37 +67,38 @@ header {
 	column-gap: 2rem;
 }
 .navbar a {
-	color: var(--color-texto);
+	color: var(--negro);
 	font-size: 1rem;
 	text-transform: uppercase;
 	font-weight: 500;
 }
 .navbar a:hover,
 .navbar .active {
-	color: var(--color-principal);
-	border-bottom: 3px solid var(--color-principal);
+	color: var(--rojo);
+	border-bottom: 3px solid var(--rojo);
 }
 
 /* Logo */
 #menu-icon {
 	font-size: 24px;
 	cursor: pointer;
-	color: var(--color-texto);
+	color: var(--negro);
 	display: none;
 }
 .logo {
 	font-size: 1.2rem;
 	font-weight: 700;
-	color: var(--color-texto);
+	color: var(--negro);
 }
 .logo span {
-	color: var(--color-principal);
+	color: var(--rojo);
 }
 
 /* Icono de Busqueda */
 #search-icon{
     font-size: 24px;
     cursor: pointer;
+	color: var(--blanco);
 }
 /* Caja de Busqueda */
 .search-box{
@@ -92,9 +106,9 @@ header {
     top: 100%;
     right: 0;
     left: 0;
-    background: var(--color-bg);
+    background: var(--blanco);
     box-shadow: 4px 4px 20px rgb(15 54 55 / 10%);
-    border: 1px solid var(--color-principal);
+    border: 1px solid var(--rojo);
     border-radius: 0.5rem;
 	clip-path: circle(0% at 100% 0%);
 	transition: 0.4s;
@@ -110,4 +124,29 @@ header {
     outline: none;
     background: transparent;
     font-size: 1rem;
+}
+
+/* Seccion de INICIO */
+.home{
+	max-width: 1300px;
+	margin: auto;
+	width: 100%;
+	min-height: 640px;
+	display: flex;
+	align-items: center;
+	background-image: url('../img/Background-home.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center left;
+}
+.home-text{
+	padding-left: 130px;
+}
+.home-text span{
+	color: var(--rojo);
+}
+.home-text p{
+	font-size: 0.938rem;
+	font-weight: 300;
+	margin: 0.5rem 0 1.2rem;
 }
