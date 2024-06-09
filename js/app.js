@@ -36,8 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const observerOptions = {
         root: null,
-        rootMargin: '0px',
-        threshold: 0.7 // Ajusta según sea necesario, mayor umbral para mayor precisión
+        rootMargin: '30px',
+        threshold: 0.3 // Ajusta según sea necesario, mayor umbral para mayor precisión
     };
 
     const observer = new IntersectionObserver(entries => {
