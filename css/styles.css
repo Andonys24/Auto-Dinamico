@@ -428,7 +428,7 @@ header.shadow #search-icon {
 	section {
 		padding: 4rem 0 2rem;
 	}
-	.container{
+	.container {
 		max-width: 1180px;
 	}
 }
@@ -522,4 +522,44 @@ header.shadow #search-icon {
 	.heading p {
 		margin-bottom: 10px;
 	}
+}
+
+/* Formulario de contacto */
+.contact-form {
+	background: var(--blanco);
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact-form h2 {
+	margin-top: 0;
+}
+.form-group {
+	margin-bottom: 15px;
+}
+.form-group label {
+	display: block;
+	margin-bottom: 5px;
+}
+.form-group input,
+.form-group textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid var(--blancoSecundario);
+	border-radius: 3px;
+}
+.form-group textarea {
+	resize: vertical;
+	height: 100px;
+}
+.form-group button {
+	background: var(--rojo);
+	color: var(--blanco);
+	padding: 10px 22px;
+	border: none;
+	cursor: pointer;
+	font-weight: 400;
+}
+.form-group button:hover {
+	background: var(--rojoSecundario);
 }

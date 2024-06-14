@@ -2,6 +2,8 @@
 
 Bienvenido al repositorio del proyecto Auto Dinámico. Auto Dinámico es una página web dedicada a la venta de autos y repuestos de calidad.
 
+![Vista Previa de la pagina](Auto-Dinamo.png)
+
 ## Descripción
 
 El objetivo de Auto Dinámico es proporcionar a los usuarios una plataforma intuitiva y fácil de usar para explorar y comprar una amplia variedad de autos y repuestos de alta calidad. La página web ofrece una experiencia de navegación fluida y funciones útiles para ayudar a los usuarios a encontrar exactamente lo que están buscando.
